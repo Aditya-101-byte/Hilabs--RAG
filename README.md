@@ -38,7 +38,8 @@ ollama pull llama3
 ollama serve
 
 ##Prepare Data:
-
+make a directory named "data" which contains all the pdf
+make a directory named "chroma" 
 Place your PDF files or other relevant data into the data/ folder.
 Run the Streamlit Application
 Start the Streamlit application to interact with the AI system:
