@@ -1,4 +1,4 @@
-# Hilabs--RAG
+# Hilabs hackathon runnerup:  RAG based query answering system for medical documents 
 
 # Retrieval-Augmented Generation (RAG) AI System
 
