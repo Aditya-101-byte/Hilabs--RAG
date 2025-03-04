@@ -47,35 +47,3 @@ Start the Streamlit application to interact with the AI system:
 streamlit run app.py
 
 
-# Code description:
-
-__init__:
-
-Initializes the RAG system with paths for data and the vector database. It also sets up the language model and the prompt template used for generating answers.
-_setup_collection:
-
-Loads documents from the specified directory, splits them into chunks, assigns unique IDs to these chunks, and then adds them to the vector database if they are not already present. It also persists the database changes.
-_get_chunk_ids:
-
-Generates unique IDs for each chunk based on its source and page number. This helps in managing and identifying chunks within the database.
-_retrieve_context_from_query:
-
-Retrieves relevant context from the vector database based on the user's query. This context is used to help answer the query.
-_get_prompt:
-
-Creates a prompt for the language model using the retrieved context and the user’s question. The prompt is formatted according to the predefined template.
-answer_query:
-
-Uses the language model to generate a response based on the prompt created. It formats and returns the response to the user.
-_load_documents:
-
-Loads PDF documents from the specified directory and prepares them for processing.
-_document_splitter:
-
-Splits loaded documents into manageable chunks for efficient indexing and retrieval.
-_get_embedding_func:
-
-Retrieves the function used to generate embeddings for the document chunks using the specified model.
-_initialize_vectorDB:
-
-Initializes the vector database and sets it up to store document embeddings. This allows for efficient similarity searches and context retrieval.
